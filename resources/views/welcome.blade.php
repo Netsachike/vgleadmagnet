@@ -46,7 +46,8 @@
           @endif
             <!-- Subtitle -->
             <p class="text-base sm:text-lg text-gray-600 italic mb-4">
-            Free Training To Grow Your Social Media Faster & Easier in 2025...
+            {{-- Free Training To Grow Your Social Media Faster & Easier in 2025... --}}
+            Go Viral Faster With These 10 Hacks (And Built-in Tools to Automate It)
             </p> 
 
             <!-- Headline -->
@@ -55,10 +56,11 @@
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
                 In Under 2 Hours,  <br class="hidden sm:block" />
                 <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
-               And You Can Start 
+               {{-- And You Can Start  --}}
+               And Begin 
                <br class="hidden sm:block" />
                <h1 class="text-3xl sm:text-5xl font-poppins  md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
-               Going Viral on Social Media 
+               Going Viral 
                <br class="hidden sm:block" />
                <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
                As Soon As Tomorrow
@@ -68,13 +70,15 @@
 
             <!-- Subheadline -->
             <p class="text-base sm:text-lg text-gray-500 italic mb-8">
-            This training is perfect for content creators and business owners - Updated for 2025
+            {{-- This training is perfect for content creators and business owners - Updated for 2025 --}}
+            Bonus: Get access to my Direct Messenger + Instagram DM automation feature — <br>
+            so when your posts start going viral, you can instantly capture leads and sales 24/7
             </p> 
 
             <!-- CTA Button -->
             <a href="#" onclick="document.getElementById('popup').classList.remove('hidden')" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xl sm:text-2xl md:text-5xl px-12 py-8 rounded-lg shadow-lg transition w-full max-w-4xl">
-               Yes! Show Me The Rules Now
-               {{-- Start Growing My Social Media --}}
+               {{-- Yes! Show Me The Rules Now --}}
+               Get Free Training + Tools Now
             </a> 
         </main> 
 
