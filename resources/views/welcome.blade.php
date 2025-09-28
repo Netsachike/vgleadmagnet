@@ -30,33 +30,33 @@
 </script>
 
     </head>
-    <body class="bg-white text-gray-900 flex flex-col min-h-screen">
+    {{-- <body class="bg-white text-gray-900 flex flex-col min-h-screen">
 
         <header class="w-full py-6 flex justify-center">
             <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" alt="Funnel Logo" class="h-12 sm:h-14">
         </header>
 
 
-         <!-- Hero Section -->
+       
         <main class="flex-1 flex flex-col items-center text-center px-4"> 
             @if(session('success'))
             <div class="mb-4 text-green-600 font-semibold">
             {{ session('success') }}
             </div>
           @endif
-            <!-- Subtitle -->
+         
             <p class="text-base sm:text-lg text-gray-600 italic mb-4">
-            {{-- Free Training To Grow Your Social Media Faster & Easier in 2025... --}}
+          
             Go Viral Faster With These 10 Hacks (And Built-in Tools to Automate It)
             </p> 
 
-            <!-- Headline -->
+         
             <h1 class="text-3xl font-black sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
             Apply This simple strategies <br class="hidden sm:block" />
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
                 In Under 2 Hours,  <br class="hidden sm:block" />
                 <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
-               {{-- And You Can Start  --}}
+              
                And Begin 
                <br class="hidden sm:block" />
                <h1 class="text-3xl sm:text-5xl font-poppins  md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
@@ -65,67 +65,66 @@
                <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
                As Soon As Tomorrow
                <br class="hidden sm:block" />
-            {{-- And You Can Start Earning Affiliate Commissions As Soon As Tomorrow --}}
+         
             </h1> 
 
-            <!-- Subheadline -->
             <p class="text-base sm:text-lg text-gray-500 italic mb-8">
-            {{-- This training is perfect for content creators and business owners - Updated for 2025 --}}
+         
             Bonus: Get access to my Direct Messenger + Instagram DM automation feature — <br>
             so when your posts start going viral, you can instantly capture leads and sales 24/7
             </p> 
 
-            <!-- CTA Button -->
+           
             <a href="#" onclick="document.getElementById('popup').classList.remove('hidden')" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xl sm:text-2xl md:text-5xl px-12 py-8 rounded-lg shadow-lg transition w-full max-w-4xl">
-               {{-- Yes! Show Me The Rules Now --}}
+             
                Get Free Training + Tools Now
             </a> 
         </main> 
 
 
-         <!-- Popup Modal -->
+        
   <div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
     <div class="bg-white rounded-lg shadow-2xl w-full max-w-3xl relative">
 
-      <!-- Close Button -->
+ 
       <button onclick="document.getElementById('popup').classList.add('hidden')"
               class="absolute top-3 right-3 text-black bg-white border rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-gray-200">
         ✕
       </button>
 
-      <!-- Blue Header -->
+     
       <div class="bg-blue-600 text-white text-center font-bold text-2xl sm:text-3xl py-5 rounded-t-lg">
         Access Free Training Now
       </div>
 
-      <!-- Content -->
+    
       <div class="p-8 flex flex-col items-center text-center">
-         <!-- Flash message area -->
+        
      
-        <!-- Image -->
+    
         <img src="https://www.sellformefunnel.com/wp-content/uploads/2024/12/Final-2025-Combo.webp" 
              alt="Training Image" 
              class="mb-8 w-full max-w-lg mx-auto">
       <form action="{{ route('newsletter.subscribe') }}" method="POST" class="space-y-4">
                 @csrf
-        <!-- Email Input -->
+       
         <input type="email" 
                name="email"
                placeholder="enter your email" 
                class="border-2 border-gray-400 w-full max-w-lg px-5 py-4 mb-5 rounded text-gray-800 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-        <!-- Green CTA -->
+      
         <button   type="submit"  class="bg-green-600 hover:bg-green-700 text-white font-extrabold text-xl sm:text-2xl px-8 py-5 rounded w-full max-w-lg">
           GET THE FREE TRAINING NOW
         </button>
       </form>
 
-        <!-- Disclaimer -->
+       
         <p class="text-sm text-gray-600 mt-4">
           we will not spam, rent, or sell your information...
         </p>
 
-        <!-- Policies -->
+       
         <p class="text-sm text-gray-600 mt-2">
           <a href="https://viralgenius.io/partners/privacy-policy" target="_blank" class="underline">Privacy Policy</a> | 
           <a href="https://viralgenius.io/partners/terms-of-service" class="underline" target="_blank">Terms of Service</a>
@@ -135,23 +134,304 @@
   </div>
 
 
-        <!-- Footer -->
+       
         <footer class="bg-gray-100 text-center py-10 px-4"> 
             <div class="flex justify-center mb-4">
                <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" alt="Funnel Logo" class="h-12 sm:h-14">
             </div>
             <p class="text-sm text-gray-500 mb-4">
-            {{-- ©Copyright 2025 , Inc.<br /> --}}
+           
             651 N Broad St, Suite 206, Middletown 19709, Delaware, USA
             </p> 
-            <!-- Trust Badges -->
-            {{-- <div class="flex justify-center gap-3 flex-wrap"> --}}
-            {{-- <img src="https://via.placeholder.com/100x40?text=Verified" alt="Business Verified" class="h-8"> --}}
-            {{-- <img src="https://via.placeholder.com/100x40?text=Safe" alt="Privacy Safe" class="h-8"> --}}
-            {{-- <img src="https://via.placeholder.com/100x40?text=Secure" alt="Secure" class="h-8"> --}}
-            {{-- </div>  --}}
+           
         </footer>
       
-    </body>
+    </body> --}}
+
+    {{-- <body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+      <header class="w-full py-6 flex justify-center">
+          <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" alt="Funnel Logo" class="h-12 sm:h-14">
+      </header>
+
+
+     
+      <main class="flex-1 flex flex-col items-center text-center px-4"> 
+          @if(session('success'))
+          <div class="mb-4 text-green-600 font-semibold">
+          {{ session('success') }}
+          </div>
+        @endif
+       
+          <p class="text-base sm:text-lg text-gray-600 italic mb-4">
+        
+          Go Viral Faster With These 10 Hacks (And Built-in Tools to Automate It)
+          </p> 
+
+       
+          <h1 class="text-3xl font-black sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
+          Apply This simple strategies <br class="hidden sm:block" />
+          <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
+              In Under 2 Hours,  <br class="hidden sm:block" />
+              <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+            
+             And Begin 
+             <br class="hidden sm:block" />
+             <h1 class="text-3xl sm:text-5xl font-poppins  md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+             Going Viral 
+             <br class="hidden sm:block" />
+             <h1 class="text-3xl sm:text-5xl md:text-6xl font-poppins  font-extrabold leading-tight max-w-4xl mb-6">
+             As Soon As Tomorrow
+             <br class="hidden sm:block" />
+       
+          </h1> 
+
+          <p class="text-base sm:text-lg text-gray-500 italic mb-8">
+       
+          Bonus: Get access to my Direct Messenger + Instagram DM automation feature — <br>
+          so when your posts start going viral, you can instantly capture leads and sales 24/7
+          </p> 
+
+         
+          <a href="#" onclick="document.getElementById('popup').classList.remove('hidden')" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xl sm:text-2xl md:text-5xl px-12 py-8 rounded-lg shadow-lg transition w-full max-w-4xl">
+           
+             Get Free Training + Tools Now
+          </a> 
+      </main> 
+
+
+      
+<div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+  <div class="bg-white rounded-lg shadow-2xl w-full max-w-3xl relative">
+
+
+    <button onclick="document.getElementById('popup').classList.add('hidden')"
+            class="absolute top-3 right-3 text-black bg-white border rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-gray-200">
+      ✕
+    </button>
+
+   
+    <div class="bg-blue-600 text-white text-center font-bold text-2xl sm:text-3xl py-5 rounded-t-lg">
+      Access Free Training Now
+    </div>
+
+  
+    <div class="p-8 flex flex-col items-center text-center">
+      
+   
+  
+      <img src="https://www.sellformefunnel.com/wp-content/uploads/2024/12/Final-2025-Combo.webp" 
+           alt="Training Image" 
+           class="mb-8 w-full max-w-lg mx-auto">
+    <form action="{{ route('newsletter.subscribe') }}" method="POST" class="space-y-4">
+              @csrf
+     
+      <input type="email" 
+             name="email"
+             placeholder="enter your email" 
+             class="border-2 border-gray-400 w-full max-w-lg px-5 py-4 mb-5 rounded text-gray-800 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    
+      <button   type="submit"  class="bg-green-600 hover:bg-green-700 text-white font-extrabold text-xl sm:text-2xl px-8 py-5 rounded w-full max-w-lg">
+        GET THE FREE TRAINING NOW
+      </button>
+    </form>
+
+     
+      <p class="text-sm text-gray-600 mt-4">
+        we will not spam, rent, or sell your information...
+      </p>
+
+     
+      <p class="text-sm text-gray-600 mt-2">
+        <a href="https://viralgenius.io/partners/privacy-policy" target="_blank" class="underline">Privacy Policy</a> | 
+        <a href="https://viralgenius.io/partners/terms-of-service" class="underline" target="_blank">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+     
+      <footer class="bg-gray-100 text-center py-10 px-4"> 
+          <div class="flex justify-center mb-4">
+             <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" alt="Funnel Logo" class="h-12 sm:h-14">
+          </div>
+          <p class="text-sm text-gray-500 mb-4">
+         
+          651 N Broad St, Suite 206, Middletown 19709, Delaware, USA
+          </p> 
+         
+      </footer>
+    
+  </body> --}}
+
+
+  <body class="bg-white text-gray-900 flex flex-col min-h-screen font-poppins">
+
+   
+    <header class="w-full py-6 flex justify-center">
+      <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" 
+           alt="ViralGenius Logo" 
+           class="h-12 sm:h-14">
+    </header>
+  
+   
+    {{-- <main class="flex-1 flex flex-col items-center text-center px-4">
+      @if(session('success'))
+        <div class="mb-4 text-green-600 font-semibold">
+          {{ session('success') }}
+        </div>
+      @endif
+  
+    
+      <p class="text-lg text-gray-600 italic mb-4">
+        Go Viral Faster With These 10 Hacks + Built-In Tools to Automate It
+      </p> 
+  
+    
+      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+        Apply Simple Strategies in Under 2 Hours <br class="hidden sm:block"/>
+        and Start Going Viral <span class="text-red-600">as Soon as Tomorrow</span>
+      </h1>
+  
+     
+      <p class="text-base sm:text-lg text-gray-500 mb-8">
+        Bonus: Unlock our <strong>Direct Messenger + Instagram DM Automation</strong> — 
+        so when your posts start blowing up, you’ll capture leads & sales 24/7 on autopilot.
+      </p> 
+  
+     
+      <a href="#"
+         onclick="document.getElementById('popup').classList.remove('hidden')"
+         class="bg-red-600 hover:bg-red-700 text-white font-bold text-xl sm:text-2xl px-10 py-6 rounded-lg shadow-lg transition w-full max-w-2xl">
+        Get Free Training + Tools Now
+      </a> 
+    </main> --}}
+
+    <main class="flex-1 flex flex-col items-center text-center px-4">
+      @if(session('success'))
+        <div class="mb-4 text-green-600 font-semibold">
+          {{ session('success') }}
+        </div>
+      @endif
+    
+      <!-- Subtitle -->
+      <p class="text-lg text-gray-600 italic mb-4">
+        Go Viral Faster With These 10 Hacks + Built-In Tools to Automate It
+      </p> 
+    
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+        Apply Simple Strategies in Under 2 Hours <br class="hidden sm:block"/>
+        and Start Going Viral <span class="text-red-600">as Soon as Tomorrow</span>
+      </h1>
+    
+      <!-- Subheadline -->
+      <p class="text-base sm:text-lg text-gray-500 mb-8 max-w-2xl">
+        Bonus: Unlock our <strong>Direct Messenger + Instagram DM Automation</strong> — 
+        so when your posts start blowing up, you’ll capture leads & sales 24/7 on autopilot.
+      </p> 
+    
+      <!-- Value Bullets -->
+      <div class="text-left max-w-2xl mb-8">
+        <ul class="space-y-4 text-lg text-gray-700">
+          <li class="flex items-start">
+            <span class="text-green-600 text-2xl mr-3">✔</span>
+            <span><strong>10 Viral Content Hacks (PDF)</strong> — Apply proven strategies that spark shares & engagement without paid ads.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-600 text-2xl mr-3">✔</span>
+            <span><strong>Messenger & Instagram DM Automation</strong> — Instantly reply, capture leads, and start conversations that convert.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-600 text-2xl mr-3">✔</span>
+            <span><strong>Quick Start Guide</strong> — Step-by-step setup so you’re running in minutes, not weeks.</span>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- CTA Button -->
+      <a href="#"
+         onclick="document.getElementById('popup').classList.remove('hidden')"
+         class="bg-red-600 hover:bg-red-700 text-white font-bold text-xl sm:text-2xl px-10 py-6 rounded-lg shadow-lg transition w-full max-w-2xl">
+        Get Free Training + Tools Now
+      </a> 
+    </main>
+  
+
+<div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-start z-50 p-4">
+  <div class="bg-white rounded-lg shadow-2xl w-full max-w-3xl relative mt-10 max-h-[90vh] flex flex-col">
+    <!-- Close Button -->
+    <button onclick="document.getElementById('popup').classList.add('hidden')"
+            class="absolute top-3 right-3 text-black bg-white border rounded-full w-10 h-10 flex items-center justify-center text-xl hover:bg-gray-200">
+      ✕
+    </button>
+
+    <!-- Content area (scrollable, includes form + button) -->
+    <div id="popupContent" class="p-6 overflow-y-auto">
+      <img src="https://www.sellformefunnel.com/wp-content/uploads/2024/12/Final-2025-Combo.webp"
+           alt="Free Training Preview"
+           class="mb-6 w-full max-w-lg mx-auto rounded-lg shadow">
+
+      <p class="text-lg text-gray-700 mb-4">
+        Enter your best email below to get instant access to:
+      </p>
+
+      <!-- Value Bullets -->
+      <ul class="text-left space-y-3 text-gray-700 mb-6 max-w-md mx-auto">
+        <li class="flex items-start">
+          <span class="text-green-600 text-xl mr-2">✔</span>
+          <span><strong>10 Viral Content Hacks (PDF)</strong> — Quick strategies to explode engagement.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-600 text-xl mr-2">✔</span>
+          <span><strong>Messenger & Instagram DM Automation</strong> — Capture leads & sales automatically.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-600 text-xl mr-2">✔</span>
+          <span><strong>Quick Start Guide</strong> — Step-by-step setup in minutes.</span>
+        </li>
+      </ul>
+
+      <!-- Form (inside scroll area so button is never cut off) -->
+      <form action="{{ route('newsletter.subscribe') }}" method="POST" class="space-y-4 w-full max-w-lg mx-auto pb-6">
+        @csrf
+        <input type="email" 
+               name="email"
+               placeholder="Enter your best email" 
+               class="border-2 border-gray-300 w-full px-5 py-4 rounded text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+        <button type="submit"  
+                class="bg-green-600 hover:bg-green-700 text-white font-bold text-xl sm:text-2xl px-8 py-5 rounded w-full">
+          Get Instant Access Now
+        </button>
+      </form>
+
+      <p class="text-sm text-gray-600 mt-4 text-center">
+        We respect your privacy. No spam, ever.
+      </p>
+
+      <p class="text-sm text-gray-600 mt-2 text-center pb-4">
+        <a href="https://viralgenius.io/partners/privacy-policy" target="_blank" class="underline">Privacy Policy</a> | 
+        <a href="https://viralgenius.io/partners/terms-of-service" target="_blank" class="underline">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  
+   
+    <footer class="bg-gray-100 text-center py-10 px-4">
+      <div class="flex justify-center mb-4">
+        <img src="https://viralgenius.io/assets/images/Logo%20full%20dark.png" alt="ViralGenius Logo" class="h-12 sm:h-14">
+      </div>
+      <p class="text-sm text-gray-500">
+        651 N Broad St, Suite 206, Middletown 19709, Delaware, USA
+      </p>
+    </footer>
+  
+  </body>
 </html>
 
