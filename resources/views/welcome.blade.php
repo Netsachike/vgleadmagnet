@@ -370,7 +370,7 @@
 
     <!-- Content area (scrollable, includes form + button) -->
     <div id="popupContent" class="p-6 overflow-y-auto">
-      <img src="https://www.sellformefunnel.com/wp-content/uploads/2024/12/Final-2025-Combo.webp"
+      <img src="https://viralgeniusapp.s3.amazonaws.com/Vg/images/17592993800_.png"
            alt="Free Training Preview"
            class="mb-6 w-full max-w-lg mx-auto rounded-lg shadow">
 
